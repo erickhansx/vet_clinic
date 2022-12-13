@@ -14,7 +14,7 @@ This repository includes files with plain SQL that where used to recreate a data
 
 - GitHub: [@erickhansx](https://github.com/erickhansx)
 - Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/erickhansx/)
 
 ## 🤝 Contributing
 
