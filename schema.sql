@@ -5,5 +5,6 @@ CREATE TABLE animals (
     escape_attempts INTEGER,
     neutered BOOLEAN,
     weight_kg REAL,
-    species TEXT,
 );
+
+ALTER TABLE animals ADD COLUMN species TEXT; 
