@@ -1,37 +1,99 @@
-# curriculum-databases-projects-template
+<a name="readme-top"></a>
 
-## Getting Started
+# 📗 Table of Contents
 
-This repository includes files with plain SQL that where used to recreate a database:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-- Used [schema.sql](./schema.sql) to create all tables.
-- Used [data.sql](./data.sql) to populate tables with sample data.
-- Checked [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
+# 📖 [VET_CLINIC] <a name="about-project"></a>
+
+**[VET CLINIC]** is a project built using SQL where you can query information about a veterinary clinic.
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">Deployed using PostgreSQL</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- **[DATABASE containing information about POKEMON's and DIGIMON's]**
+- **[USE QUERIES TO FILTER DATA]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```
+- git clone git@github.com:erickhansx/vet-clinic.git
+- cd vet-clinic
+```
+
+### Install
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
 
 👤 **Erick Hans Martinez**
 
 - GitHub: [@erickhansx](https://github.com/erickhansx)
 - Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/erickhansx/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+If you like this project...
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-## 📝 License
+I would like to thank...
 
-This project is [MIT](./MIT.md) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
