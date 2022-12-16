@@ -8,3 +8,29 @@ CREATE TABLE animals (
 );
 
 ALTER TABLE animals ADD COLUMN species TEXT; 
+
+
+CREATE TABLE owners (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    full_name TEXT,
+    age INTEGER
+);
+
+ CREATE TABLE species(
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name TEXT
+ );
+
+
+/* SET ID AS PRIMARY KEY */
+ALTER TABLE animals ADD PRIMARY KEY (id);
+
+ALTER TABLE animals DROP species;
+
+ALTER TABLE animals ADD species_id INTEGER;
+
+ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES species (id);
+
+ALTER TABLE animals ADD owner_id INTEGER;
+
+ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
