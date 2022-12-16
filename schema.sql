@@ -37,7 +37,7 @@ ALTER TABLE animals ADD FOREIGN KEY (owner_id) REFERENCES owners (id);
 
 CREATE TABLE vets (
     id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    name TEXT,
+    name varchar,
     age INTEGER,
     date_of_graduation DATE
 );
