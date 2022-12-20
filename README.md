@@ -69,6 +69,13 @@ Clone this repository to your desired folder:
 - Twitter: [@TheErickHans](https://twitter.com/TheErickHans)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Marcos Gualtero Lourenzo**
+
+- GitHub: [@erickhansx](https://github.com/Goruchie)
+- Twitter: [@TheErickHans](https://twitter.com/Goruchie2)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/marcos-gualtero)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>

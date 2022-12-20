@@ -70,6 +70,7 @@ SELECT full_name AS name,COUNT(animals.name) AS animal FROM owners LEFT JOIN ani
 
 
 
+
 -- Who was the last animal seen by William Tatcher?
 SELECT vets.name, animals.name, visit_date FROM visits INNER JOIN animals ON animals.id = visits.id_animals INNER JOIN vets ON vets.id = id_vet WHERE visit_date = (SELECT MAX(visit_date) FROM visits where id_vet= 1);
 
@@ -97,3 +98,10 @@ SELECT COUNT(animals.id) FROM visits INNER JOIN animals ON animals.id = visits.i
 
 -- What specialty should Maisy Smith consider getting? Look for the species she gets the most.
 SELECT species.name FROM visits INNER JOIN animals ON animals.id = visits.id_animals INNER JOIN vets ON vets.id = visits.id_vet INNER JOIN species ON species.id = species_id WHERE vets.name= 'Maisy Smith' GROUP BY species.name ORDER BY COUNT(animals.species_id) DESC LIMIT 1;
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where id_animals = 4;
+
+EXPLAIN ANALYZE SELECT * FROM visits where id_vet = 2;
+
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+

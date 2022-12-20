@@ -61,11 +61,20 @@ FROM owners
 WHERE owners.full_name='Dean Winchester' AND animals.name='Angemon' 
 OR owners.full_name='Dean Winchester' AND animals.name='Boarmon';
 
+
 /* 4th PULL REQUEST */
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('William Tatcher', 45, '2000-04-23');
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-01-17');
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, '1981-05-04');
 INSERT INTO vets(name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2008-06-08');
+=======
+INSERT INTO visits (id_animals, id_vet, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+
+insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
+
+
+
 
 INSERT INTO specializations(id_vet, id_species) VALUES (1, 1);
 INSERT INTO specializations(id_vet, id_species) VALUES (3, 1);
