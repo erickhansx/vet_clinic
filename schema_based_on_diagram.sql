@@ -11,6 +11,7 @@ CREATE TABLE "medical_histories"(
     "patient_id" INTEGER NOT NULL,
     "status" VARCHAR(255) NOT NULL
 );
+
 ALTER TABLE
     "medical_histories" ADD PRIMARY KEY("id");
 CREATE TABLE "treatments"(
@@ -48,7 +49,14 @@ ALTER TABLE
 ALTER TABLE
     "invoices" ADD CONSTRAINT "invoices_medical_history_id_foreign" FOREIGN KEY("medical_history_id") REFERENCES "medical_histories"("id");
 
+CREATE TABLE medical_histories_treatments(medical_history_id INT, 
+treatment_id INT, CONSTRAINT HIST_TREAT 
+FOREIGN KEY(medical_history_id ) REFERENCES medical_histories(id), 
+CONSTRAINT treat_hist FOREIGN KEY (treatment_id) REFERENCES treatments(id));
+
 CREATE INDEX invoice_items_treatment_id_idx ON invoice_items (treatment_id);
 CREATE INDEX invoice_items_invoice_id_idx ON invoice_items (invoice_id);
 CREATE INDEX medical_histories_patient_id_idx ON medical_histories (patient_id);
 CREATE INDEX invoices_medical_history_id_idx ON invoices (medical_history_id);
+CREATE INDEX medical_histories_treatments_medical_history_id_idx ON medical_histories_treatments (medical_history_id);
+CREATE INDEX medical_histories_treatments _treatment_id_idx ON medical_histories_treatments (treatment_id);
